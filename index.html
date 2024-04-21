@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="estilo.css"/>
+  <title>Gabarito</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Formulário de Gabarito</h2>
+    <form id="gabaritoForm">
+      <label for="nomeAluno">Nome do Aluno:</label>
+      <input type="text" id="nomeAluno" name="nomeAluno" required>
+      
+      <label for="turmaAluno">Turma do Aluno:</label>
+      <input type="text" id="turmaAluno" name="turmaAluno" required>
+      
+      <div class="questions">
+        <h3>Questões</h3>
+        <!-- Aqui você pode adicionar as 80 questões de múltipla escolha -->
+        <!-- Exemplo de uma questão -->
+        <label for="questao1">Questão 1:</label>
+        <select id="questao1" name="questao1">
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E</option>
+        </select>
+        <!-- Repita o bloco de código acima para cada questão -->
+      </div>
+      
+      <button type="button" class="save-button" onclick="salvarGabarito()">Salvar Gabarito</button>
+    </form>
+  </div>
+</body>
+</html>
